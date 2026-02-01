@@ -1,207 +1,33 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AtoBee - Bientôt disponible. Calculez le coût réel de vos trajets.">
-    <meta name="author" content="ADME Consulting SRL">
     <meta name="robots" content="noindex, nofollow">
-
-    <title>AtoBee | Bientôt disponible</title>
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="mascot.png">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Coming Soon</title>
     <style>
-        :root {
-            --honey: #F5A623;
-            --honey-dark: #E09000;
-            --charcoal: #1A1A1A;
-            --text-secondary: rgba(255, 255, 255, 0.7);
-            --gradient-light: #2C5364;
-            --gradient-mid: #203A43;
-            --gradient-dark: #0F2027;
-        }
-
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        html, body {
-            height: 100%;
-        }
-
         body {
-            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(180deg, var(--gradient-light) 0%, var(--gradient-mid) 50%, var(--gradient-dark) 100%);
-            color: white;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 24px;
-            text-align: center;
+            background: #0a0a0a;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-
-        .container {
-            max-width: 480px;
-            width: 100%;
-            animation: fadeIn 0.8s ease-out;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .mascot {
-            width: 140px;
-            height: auto;
-            margin-bottom: 32px;
-            animation: float 3s ease-in-out infinite;
-            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-
-        .logo {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 16px;
-        }
-
-        .logo-ato {
-            color: white;
-        }
-
-        .logo-bee {
-            color: var(--honey);
-        }
-
-        .tagline {
-            font-size: 1.125rem;
-            color: var(--text-secondary);
-            margin-bottom: 48px;
-            line-height: 1.6;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 16px 28px;
-            border-radius: 100px;
-            font-size: 1rem;
+        h1 {
+            color: #ffffff;
+            font-size: 1.5rem;
             font-weight: 500;
-            margin-bottom: 48px;
-        }
-
-        .badge-dot {
-            width: 10px;
-            height: 10px;
-            background: var(--honey);
-            border-radius: 50%;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(0.9); }
-        }
-
-        .contact {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .contact a {
-            color: var(--honey);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .contact a:hover {
-            color: var(--honey-dark);
-        }
-
-        .footer {
-            position: fixed;
-            bottom: 24px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.8rem;
-        }
-
-        @media (max-width: 480px) {
-            .mascot {
-                width: 100px;
-            }
-
-            .logo {
-                font-size: 2rem;
-            }
-
-            .tagline {
-                font-size: 1rem;
-            }
-
-            .badge {
-                padding: 12px 20px;
-                font-size: 0.9rem;
-            }
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="mascot.png" alt="AtoBee" class="mascot">
-
-        <div class="logo">
-            <span class="logo-ato">Ato</span><span class="logo-bee">Bee</span>
-        </div>
-
-        <p class="tagline">
-            De A à B, en toute clarté.<br>
-            Calculez le coût réel de vos trajets.
-        </p>
-
-        <div class="badge">
-            <span class="badge-dot"></span>
-            <span>En cours de développement</span>
-        </div>
-
-        <p class="contact">
-            Une question ? <a href="mailto:contact@atobee.app">contact@atobee.app</a>
-        </p>
-    </div>
-
-    <div class="footer">
-        ADME Consulting SRL
-    </div>
+    <h1>Coming Soon</h1>
 </body>
 </html>
