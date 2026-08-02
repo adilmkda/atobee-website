@@ -13,6 +13,10 @@ grep -q 'Google Mobile Ads' "$PRIVACY"
 grep -q 'Your privacy rights' "$PRIVACY"
 grep -q 'Vos droits' "$PRIVACY"
 grep -q 'Last updated: 2 August 2026' "$PRIVACY"
+if grep -Eqi 'Firebase|HERE Technologies|RevenueCat|Booking\.com|TomTom|TripPlanner|Premium|mapping|cartographie' "$PRIVACY"; then
+    echo "Privacy page exposes implementation details or unreleased product names." >&2
+    exit 1
+fi
 
 test "$(cat "$APP_ADS")" = 'google.com, pub-5909751593491464, DIRECT, f08c47fec0942fa0'
 
