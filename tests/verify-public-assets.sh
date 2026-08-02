@@ -7,6 +7,7 @@ APP_ADS="$ROOT/app-ads.txt"
 
 test -f "$PRIVACY"
 grep -q '<title>AtoBee Privacy Policy</title>' "$PRIVACY"
+grep -q '<meta name="robots" content="noindex, nofollow">' "$PRIVACY"
 grep -q 'contact@atobee.app' "$PRIVACY"
 grep -q 'Google Mobile Ads' "$PRIVACY"
 grep -q 'Your privacy rights' "$PRIVACY"
